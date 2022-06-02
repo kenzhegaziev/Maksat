@@ -1,2 +1,26 @@
 # Maksat
 mkdir
+git push -u origin master
+server {
+
+listen 80 default;
+
+location ^~ /uploads/ {
+
+root /home/box/web;
+
+}
+
+location ~* ^.+\.\w+$ {
+
+root /home/box/web/public;
+
+}
+
+location / {
+
+return 404;
+
+}
+
+}
