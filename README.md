@@ -1,6 +1,4 @@
 # Maksat
-mkdir
-git push -u origin master
 server {
 
 listen 80 default;
